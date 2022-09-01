@@ -1,12 +1,13 @@
 @use '../base/light' as l;
 
 .light {
-    .main__container{
-        background-color: l.$mainBG;
-    }
     .main__top{
-        background-color: l.$mainBG;
+        background-color: l.$cardBG;
     }
+/*     .main__container{
+        background-color: l.$mainBG;
+    } */
+
     .main__left{
         border-bottom-color: l.$toggle;
     }
