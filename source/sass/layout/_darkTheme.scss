@@ -1,0 +1,10 @@
+@use '../base/dark' as d;
+
+.dark{
+    .main__container{
+        background-color: d.$mainBG;
+    }
+    .main__left{
+        border-bottom-color: d.$toggle;
+    }
+}

@@ -1,0 +1,9 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+@use '../base/light' as l;
+@use '../base/dark' as d;
+
+.main{
+    font-size: v.$font;
+    font-family: v.$family;
+}

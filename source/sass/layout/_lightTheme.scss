@@ -1,0 +1,27 @@
+@use '../base/light' as l;
+
+.light {
+    .main__container{
+        background-color: l.$mainBG;
+    }
+    .main__top{
+        background-color: v.$mainBG;
+    }
+    .main__left{
+        border-bottom-color: l.$toggle;
+    }
+    .main__subtitle{
+        color: l.$textColor1;
+    }
+    .main__theme{
+        color: l.$textColor1;
+    }
+    .main__toggle {
+        background-color: l.$toggle;
+        &::-webkit-slider-thumb,&::-moz-range-thumb {
+            background-color: l.$mainBG;
+        }
+       
+    }
+}
+

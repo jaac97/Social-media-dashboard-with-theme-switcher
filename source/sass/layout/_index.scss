@@ -1,5 +1,3 @@
-$red: crimson;
-
-html{
-    background-color: $red;
-}
+@forward  'lightTheme';
+@forward 'darkTheme';
+@forward 'top';

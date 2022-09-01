@@ -1,0 +1,72 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.main__container {
+    max-width: v.$desktop;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+.main__top {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+    @include m.desktop {
+        grid-template-columns: repeat(2, minmax(600px, 20%));
+        justify-content: space-between;
+        margin-bottom: 0;
+        height: 25rem;
+    }
+}
+
+.main__left {
+    border-bottom: 1px solid;
+    @include m.desktop {
+        border-bottom: none;
+    }
+}
+
+.main__heading {
+    margin-bottom: 1rem;
+    @include m.desktop {
+        margin-bottom: 0;
+    }
+}
+
+.main__subtitle {
+    margin-top: 0;
+    font-weight: 700;
+    ;
+}
+
+.main__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include m.desktop {
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+.main__theme {
+    font-weight: 700;
+}
+
+.main__toggle {
+    width: 5rem;
+    padding: .2rem;
+    height: 25px;
+    border-radius: 2rem;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    &::-webkit-slider-thumb,&::-moz-range-thumb {
+        height: 80%;
+        width: 40%;
+        appearance: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+}
