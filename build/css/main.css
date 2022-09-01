@@ -356,6 +356,11 @@ img {
   max-width: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   font-size: 1.4rem;
   font-family: "Inter", sans-serif;
@@ -391,6 +396,12 @@ img {
 }
 .light .card {
   background-color: hsl(227deg, 47%, 96%);
+}
+.light .card__nickname {
+  color: hsl(228deg, 12%, 44%);
+}
+.light .card__text {
+  color: hsl(230deg, 17%, 14%);
 }
 
 .dark .main__container {
@@ -501,11 +512,12 @@ img {
 }
 
 .card {
-  min-height: 23rem;
+  min-height: 21.5rem;
   text-align: center;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
+  padding-top: 2.5rem;
 }
 
 .card::after {
@@ -532,5 +544,62 @@ img {
 
 .card--youtube::after {
   background: hsl(348deg, 97%, 39%);
+}
+
+.card__heading {
+  margin-bottom: 3.5rem;
+}
+
+.card__nickname {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card__numbers {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.card__text {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+.card__variation {
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.card__variation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: -1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.card__variation--up {
+  color: hsl(163deg, 72%, 41%);
+}
+
+.card__variation--up::before {
+  background-image: url("../images/icon-up.svg");
+}
+
+.card__variation--down {
+  color: hsl(356deg, 69%, 56%);
+}
+
+.card__variation--down::before {
+  background-image: url("../images/icon-down.svg");
 }
 /*# sourceMappingURL=main.css.map */
