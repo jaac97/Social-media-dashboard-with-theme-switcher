@@ -51,9 +51,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
     @include m.desktop {
         justify-content: center;
         gap: 2rem;
+        padding-top: 0;
+
     }
 }
 
