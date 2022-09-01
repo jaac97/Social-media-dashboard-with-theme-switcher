@@ -27,5 +27,11 @@
     .card{
         background-color: l.$cardBG;
     }
+    .card__nickname{
+        color: l.$textColor1;
+    }
+    .card__text{
+        color: l.$textColor2;
+    }
 }
 
