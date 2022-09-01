@@ -405,8 +405,8 @@ img {
 }
 @media (min-width: 1440px) {
   .main__top {
-    /*         grid-template-columns: repeat(2, minmax(600px, 20%));
-            justify-content: space-between; */
+    grid-template-columns: repeat(2, minmax(600px, 20%));
+    justify-content: space-between;
     grid-template-columns: 60rem auto;
     justify-content: space-around;
     align-items: start;
