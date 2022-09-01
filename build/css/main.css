@@ -361,6 +361,11 @@ img {
   font-family: "Inter", sans-serif;
 }
 
+[class$=container] {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .light {
   /*     .main__container{
           background-color: l.$mainBG;
@@ -384,6 +389,9 @@ img {
 .light .main__toggle::-webkit-slider-thumb, .light .main__toggle::-moz-range-thumb {
   background-color: hsl(0deg, 0%, 100%);
 }
+.light .card {
+  background-color: hsl(227deg, 47%, 96%);
+}
 
 .dark .main__container {
   background-color: hsl(230deg, 17%, 14%);
@@ -399,12 +407,15 @@ img {
 }
 
 .main__top {
-  display: grid;
-  grid-template-columns: 1fr;
   margin-bottom: 1rem;
+  height: 30rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 @media (min-width: 1440px) {
   .main__top {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-columns: repeat(2, minmax(600px, 20%));
     justify-content: space-between;
     grid-template-columns: 60rem auto;
@@ -416,6 +427,7 @@ img {
 }
 
 .main__left {
+  padding-bottom: 2rem;
   border-bottom: 1px solid;
 }
 @media (min-width: 1440px) {
@@ -469,5 +481,56 @@ img {
   appearance: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.cards {
+  list-style: none;
+  padding: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  top: -10rem;
+}
+@media (min-width: 1440px) {
+  .cards {
+    grid-template-columns: repeat(4, 25.5rem);
+    padding: 0;
+    justify-content: space-evenly;
+  }
+}
+
+.card {
+  min-height: 23rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.3rem;
+}
+
+.card--facebook::after {
+  background: hsl(208deg, 92%, 53%);
+}
+
+.card--twitter::after {
+  background: hsl(203deg, 89%, 53%);
+}
+
+.card--instagram::after {
+  background: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
+}
+
+.card--youtube::after {
+  background: hsl(348deg, 97%, 39%);
 }
 /*# sourceMappingURL=main.css.map */
