@@ -364,6 +364,9 @@ img {
 .light .main__container {
   background-color: hsl(0deg, 0%, 100%);
 }
+.light .main__top {
+  background-color: hsl(0deg, 0%, 100%);
+}
 .light .main__left {
   border-bottom-color: hsl(230deg, 22%, 74%);
 }
