@@ -1,0 +1,52 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.cards {
+    list-style: none;
+    padding: 2rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    top: -10rem;
+    @include m.desktop {
+        grid-template-columns: repeat(4, 25.5rem);
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
+
+.card {
+    min-height: 23rem;
+    text-align: center;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: .3rem;
+}
+
+.card--facebook::after {
+    background: v.$success;
+}
+
+.card--twitter::after {
+    background: v.$successLight;
+}
+
+.card--instagram::after {
+
+    background: v.$primaryGradient;
+}
+
+.card--youtube::after {
+    background: v.$secondaryDark;
+}
