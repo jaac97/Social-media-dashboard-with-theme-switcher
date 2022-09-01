@@ -405,6 +405,7 @@ img {
   .main__top {
     grid-template-columns: repeat(2, minmax(600px, 20%));
     justify-content: space-between;
+    align-items: start;
     margin-bottom: 0;
     height: 25rem;
   }
