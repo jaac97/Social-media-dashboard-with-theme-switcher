@@ -2,7 +2,10 @@
 @use '../base/variables' as v;
 @use '../base/light' as l;
 @use '../base/dark' as d;
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .main{
     font-size: v.$font;
     font-family: v.$family;
