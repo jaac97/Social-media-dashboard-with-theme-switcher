@@ -629,6 +629,12 @@ img {
 
 .main__day {
   margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+@media (min-width: 1440px) {
+  .main__day {
+    padding-left: 0;
+  }
 }
 
 .cards--small {
