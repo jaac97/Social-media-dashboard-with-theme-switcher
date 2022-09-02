@@ -385,13 +385,16 @@ img {
   color: hsl(228deg, 12%, 44%);
 }
 .light .main__toggle {
+  appearance: none;
   background-color: hsl(230deg, 22%, 74%);
   transition: background-image 0.3s ease-in-out;
 }
 .light .main__toggle::-webkit-slider-thumb, .light .main__toggle::-moz-range-thumb {
+  appearance: none;
   background-color: hsl(0deg, 0%, 100%);
 }
 .light .main__toggle:hover {
+  appearance: none;
   cursor: pointer;
   background-image: linear-gradient(to right, hsl(208deg, 92%, 53%), hsl(163deg, 72%, 41%));
   transition: background-image 0.3s ease-in-out;
