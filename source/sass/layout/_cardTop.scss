@@ -9,6 +9,7 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     top: -10rem;
+    margin-bottom: 5rem;
     @include m.desktop {
         grid-template-columns: repeat(4, 25.5rem);
         padding: 0;

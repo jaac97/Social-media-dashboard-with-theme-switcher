@@ -364,6 +364,7 @@ img {
 .main {
   font-size: 1.4rem;
   font-family: "Inter", sans-serif;
+  min-height: 100vh;
 }
 
 [class$=container] {
@@ -507,6 +508,7 @@ img {
   grid-template-columns: 1fr;
   gap: 2rem;
   top: -10rem;
+  margin-bottom: 5rem;
 }
 @media (min-width: 1440px) {
   .cards {
@@ -608,7 +610,13 @@ img {
   background-image: url("../images/icon-down.svg");
 }
 
+.main__cards {
+  position: relative;
+  top: -10rem;
+}
+
 .main__day {
+  margin-bottom: 1rem;
   padding-left: 2rem;
 }
 
@@ -645,5 +653,9 @@ img {
   align-self: self-end;
   justify-self: self-end;
   margin: 0;
+}
+
+.attribution {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
