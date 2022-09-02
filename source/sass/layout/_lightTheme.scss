@@ -27,11 +27,14 @@
     .card{
         background-color: l.$cardBG;
     }
-    .card__nickname{
+    .card__top{
         color: l.$textColor1;
     }
     .card__text{
         color: l.$textColor2;
+    }
+    .main__day{
+        color: l.$textColor1;
     }
 }
 

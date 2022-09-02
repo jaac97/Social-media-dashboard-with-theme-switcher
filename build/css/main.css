@@ -397,11 +397,14 @@ img {
 .light .card {
   background-color: hsl(227deg, 47%, 96%);
 }
-.light .card__nickname {
+.light .card__top {
   color: hsl(228deg, 12%, 44%);
 }
 .light .card__text {
   color: hsl(230deg, 17%, 14%);
+}
+.light .main__day {
+  color: hsl(228deg, 12%, 44%);
 }
 
 .dark .main__container {
@@ -465,11 +468,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
 }
 @media (min-width: 1440px) {
   .main__right {
     justify-content: center;
     gap: 2rem;
+    padding-top: 0;
   }
 }
 
@@ -550,7 +555,7 @@ img {
   margin-bottom: 3.5rem;
 }
 
-.card__nickname {
+.card__top {
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -601,5 +606,44 @@ img {
 
 .card__variation--down::before {
   background-image: url("../images/icon-down.svg");
+}
+
+.main__day {
+  padding-left: 2rem;
+}
+
+.cards--small {
+  position: static;
+}
+
+.card--small {
+  padding: 2.5rem;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card__heading--small {
+  grid-column: 1/3;
+  text-align: left;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.card__numbers--small {
+  font-size: 3rem;
+  text-align: left;
+  align-self: self-end;
+  margin-bottom: 0;
+}
+
+.card__variation--small {
+  align-self: self-end;
+  justify-self: self-end;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
