@@ -1,12 +1,14 @@
+@use '../base/mixins' as m;
 .main__cards {
     position: relative;
     top: -10rem;
-    max-width: 100rem;
+    @include m.desktop {
+        max-width: min(90%,111rem);
+    }
 }
 
 .main__day {
     margin-bottom: 1rem;
-    padding-left: 2rem;
 }
 
 .cards--small {

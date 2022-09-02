@@ -14,7 +14,9 @@
         grid-template-columns: repeat(4, 25.5rem);
         padding: 0;
         justify-content: space-evenly;
-        max-width: 100rem;
+        justify-content: center;
+        column-gap: 3rem;
+        row-gap: 2.5rem;
     }
 }
 

@@ -515,7 +515,9 @@ img {
     grid-template-columns: repeat(4, 25.5rem);
     padding: 0;
     justify-content: space-evenly;
-    max-width: 100rem;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 2.5rem;
   }
 }
 
@@ -614,12 +616,15 @@ img {
 .main__cards {
   position: relative;
   top: -10rem;
-  max-width: 100rem;
+}
+@media (min-width: 1440px) {
+  .main__cards {
+    max-width: min(90%, 111rem);
+  }
 }
 
 .main__day {
   margin-bottom: 1rem;
-  padding-left: 2rem;
 }
 
 .cards--small {
