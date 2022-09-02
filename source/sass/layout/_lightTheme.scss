@@ -1,12 +1,9 @@
 @use '../base/light' as l;
-
+@use '../base/variables' as v;
 .light {
     .main__top{
         background-color: l.$cardBG;
     }
-/*     .main__container{
-        background-color: l.$mainBG;
-    } */
 
     .main__left{
         border-bottom-color: l.$toggle;
@@ -18,11 +15,18 @@
         color: l.$textColor1;
     }
     .main__toggle {
+        
         background-color: l.$toggle;
+        transition: background-image .3s ease-in-out;
         &::-webkit-slider-thumb,&::-moz-range-thumb {
             background-color: l.$mainBG;
         }
-       
+        &:hover{
+            cursor: pointer;
+            background-image: v.$secondaryGradient;
+            transition: background-image .3s ease-in-out;
+
+        }
     }
     .card{
         background-color: l.$cardBG;

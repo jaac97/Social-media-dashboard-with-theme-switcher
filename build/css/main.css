@@ -372,11 +372,6 @@ img {
   margin: 0 auto;
 }
 
-.light {
-  /*     .main__container{
-          background-color: l.$mainBG;
-      } */
-}
 .light .main__top {
   background-color: hsl(227deg, 47%, 96%);
 }
@@ -391,9 +386,15 @@ img {
 }
 .light .main__toggle {
   background-color: hsl(230deg, 22%, 74%);
+  transition: background-image 0.3s ease-in-out;
 }
 .light .main__toggle::-webkit-slider-thumb, .light .main__toggle::-moz-range-thumb {
   background-color: hsl(0deg, 0%, 100%);
+}
+.light .main__toggle:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, hsl(208deg, 92%, 53%), hsl(163deg, 72%, 41%));
+  transition: background-image 0.3s ease-in-out;
 }
 .light .card {
   background-color: hsl(227deg, 47%, 96%);
