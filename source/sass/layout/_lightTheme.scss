@@ -38,8 +38,11 @@
 
     .card {
         background-color: l.$cardBG;
+        cursor: pointer;
+        &:hover{
+            background-color: l.$toggle;
+        }
     }
-
     .card__top {
         color: l.$textColor1;
     }

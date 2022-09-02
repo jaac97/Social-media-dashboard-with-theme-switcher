@@ -401,6 +401,10 @@ img {
 }
 .light .card {
   background-color: hsl(227deg, 47%, 96%);
+  cursor: pointer;
+}
+.light .card:hover {
+  background-color: hsl(230deg, 22%, 74%);
 }
 .light .card__top {
   color: hsl(228deg, 12%, 44%);
@@ -419,7 +423,7 @@ img {
   color: hsl(0deg, 0%, 100%);
 }
 .dark .main__top {
-  background-color: hsl(228deg, 28%, 20%);
+  background-color: hsl(232deg, 19%, 15%);
 }
 .dark .main__left {
   border-bottom-color: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
@@ -446,6 +450,10 @@ img {
   transition: background-image 0.3s ease-in-out;
 }
 .dark .card {
+  cursor: pointer;
+  background-color: hsl(232deg, 19%, 15%);
+}
+.dark .card:hover {
   background-color: hsl(228deg, 28%, 20%);
 }
 .dark .card__top {
@@ -475,6 +483,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-columns: repeat(2, minmax(600px, 20%));
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     grid-template-columns: 60rem auto;
     justify-content: space-around;
@@ -519,6 +528,7 @@ img {
     justify-content: center;
     gap: 2rem;
     padding-top: 0;
+    align-self: center;
   }
 }
 
