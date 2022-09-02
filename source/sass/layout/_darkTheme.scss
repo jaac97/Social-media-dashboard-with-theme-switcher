@@ -1,10 +1,61 @@
 @use '../base/dark' as d;
-
-.dark{
-    .main__container{
+@use '../base/variables' as v;
+.dark {
+    body{
         background-color: d.$mainBG;
     }
-    .main__left{
+    .main{
+        color: d.$textColor2;
+    }
+    .main__top {
+        background-color: d.$cardBG;
+    }
+
+    .main__left {
         border-bottom-color: d.$toggle;
+    }
+
+    .main__subtitle {
+        color: d.$textColor1;
+    }
+
+    .main__theme {
+        color: d.$textColor1;
+    }
+
+    .main__toggle {
+        appearance: none;
+        background: d.$toggle;
+        transition: background-image .3s ease-in-out;
+
+        &::-webkit-slider-thumb,
+        &::-moz-range-thumb {
+            appearance: none;
+            background-color: d.$mainBG;
+        }
+
+        &:hover {
+            appearance: none;
+            cursor: pointer;
+            background-image: v.$secondaryGradient;
+            transition: background-image .3s ease-in-out;
+
+        }
+    }
+
+    .card {
+        background-color: d.$cardBG;
+    }
+
+    .card__top {
+        color: d.$textColor1;
+    }
+
+    .card__text {
+        color: d.$textColor2;
+    }
+
+    .main__day {
+        color: d.$textColor1;
     }
 }

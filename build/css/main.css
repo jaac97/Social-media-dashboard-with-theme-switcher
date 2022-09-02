@@ -412,11 +412,50 @@ img {
   color: hsl(228deg, 12%, 44%);
 }
 
-.dark .main__container {
+.dark body {
   background-color: hsl(230deg, 17%, 14%);
 }
+.dark .main {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .main__top {
+  background-color: hsl(228deg, 28%, 20%);
+}
 .dark .main__left {
-  border-bottom-color: linear gradient hsl(210deg, 78%, 56%) to hsl(146deg, 68%, 55%);
+  border-bottom-color: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+.dark .main__subtitle {
+  color: hsl(228deg, 34%, 66%);
+}
+.dark .main__theme {
+  color: hsl(228deg, 34%, 66%);
+}
+.dark .main__toggle {
+  appearance: none;
+  background: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+  transition: background-image 0.3s ease-in-out;
+}
+.dark .main__toggle::-webkit-slider-thumb, .dark .main__toggle::-moz-range-thumb {
+  appearance: none;
+  background-color: hsl(230deg, 17%, 14%);
+}
+.dark .main__toggle:hover {
+  appearance: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, hsl(208deg, 92%, 53%), hsl(163deg, 72%, 41%));
+  transition: background-image 0.3s ease-in-out;
+}
+.dark .card {
+  background-color: hsl(228deg, 28%, 20%);
+}
+.dark .card__top {
+  color: hsl(228deg, 34%, 66%);
+}
+.dark .card__text {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .main__day {
+  color: hsl(228deg, 34%, 66%);
 }
 
 .main__container {
@@ -562,6 +601,10 @@ img {
 
 .card__heading {
   margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .card__top {

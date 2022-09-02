@@ -57,6 +57,10 @@
 }
 .card__heading{
     margin-bottom: 3.5rem;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 .card__top{
     font-weight: 700;
